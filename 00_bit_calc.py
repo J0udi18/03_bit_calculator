@@ -192,8 +192,8 @@ first_time = input("Press <enter> to see this instruction or any key to continue
 if first_time == "":
     instructions()
 # Loop to alllow multiple calculations per session 
-Keep_going = ""
-while Keep_going == "":
+keep_going = ""
+while keep_going == "":
 
     # Ask the user for the file type 
     data_type = user_choice()
@@ -201,8 +201,8 @@ while Keep_going == "":
       
 
     # For integers, ask for integer
-    data_type = user_choice()
-    print("you chose", data_type)
+  #data_type-user_choice()
+  #print ("you chose", data_type)
 
     # for integers, ask for integer
     if data_type =="integer": 
@@ -218,6 +218,9 @@ while Keep_going == "":
     else:
         text_bits()
 
-print()
-keep_going = input("Press <enter> to continue or any key to quit ")
-print()
+    print()
+    keep_going = input("Press <enter> to continue or any key to quit ")
+    print()
+
+print("----Thanks for using Bit calculator----")
+
